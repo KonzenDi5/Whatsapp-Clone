@@ -32,12 +32,10 @@ import {
   export const Initial = () => {
     const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
     const [menuOpen, setMenuOpen] = useState(false);
- 
   
     const handleMenuClick = () => {
       setMenuOpen(!menuOpen);
     };
- 
   
     return (
       <>

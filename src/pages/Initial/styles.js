@@ -11,6 +11,7 @@ export const Button = styled.button`
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 
   &::after {
     content: "";
@@ -72,7 +73,7 @@ export const Menu = styled.div`
   transition: left 0.3s ease;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 50px;
   box-sizing: border-box;
 `;
 
