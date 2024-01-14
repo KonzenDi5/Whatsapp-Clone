@@ -6,7 +6,8 @@ export const Themes = {
     gray: '##8C8C8C',
     lightgray: '##B0B0B0',
     white: '##FFFFFF',
-    darkmode: '#004A56',
-    clearmode: '#FDF5E7'
+    darkmode: '#02343B',
+    colorChat: '#060C20',
+    clearmode: '#FDF5E7',
   }
   

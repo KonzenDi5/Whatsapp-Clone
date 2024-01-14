@@ -1,7 +1,8 @@
-import firebase from 'firebase/compat/app'; 
-import 'firebase/compat/auth'; 
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
 
-export const firebaseConfig = {
+const firebaseConfig = {
     apiKey: "AIzaSyCKzAh4C4iS2tIOl4nt0QMYSFioPRNOjYg",
     authDomain: "whatsappclone-16b4f.firebaseapp.com",
     projectId: "whatsappclone-16b4f",
@@ -13,10 +14,7 @@ export const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-/*
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import 'firebase/compat/auth';
-UTILIZAR PARA IMPORTAR O BANCO PRA DENTRO DA PÁGINA */
+const auth = firebase.auth();
+const db = firebase.firestore();
 
-export default firebaseConfig
+export { auth, db };

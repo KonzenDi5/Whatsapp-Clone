@@ -1,8 +1,9 @@
 import { AppRoutes } from './app.routes'
 import { AuthRoutes } from './auth.routes'
+import { useAuth } from './authContext' // Certifique-se de importar useAuth
 
 export const RoutesApp = () => {
-  const { signed } = false
+  const { user } = useAuth() // Use useAuth para obter o estado do usuário
 
-  return signed ? <AppRoutes /> : <AuthRoutes />
+  return user ? <AppRoutes /> : <AuthRoutes /> // aqui vemos se o usuário está presente
 }

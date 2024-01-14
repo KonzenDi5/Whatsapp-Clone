@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 
-import { NotFound, Initial  } from '../pages'
+import { NotFound, Initial, Register, Login  } from '../pages'
 
 
 export const AuthRoutes = () => {
@@ -8,6 +8,8 @@ export const AuthRoutes = () => {
     <Routes>
       <Route path="/" element={<Initial />} />
       <Route path="*" element={<NotFound />} />
+      <Route path='/register' element={<Register />} />
+      <Route path='/login' element={<Login />} />
     </Routes>
   )
 }

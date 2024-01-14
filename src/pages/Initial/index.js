@@ -28,6 +28,7 @@ import {
   import messageL2 from "../../assets/messageslayer2.png"
   import message4 from "../../assets/message4.png"
   import { Fade } from "react-reveal";
+  import { Link } from "react-router-dom";
   
   export const Initial = () => {
     const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
@@ -58,7 +59,9 @@ import {
               <>
                 <WhatsIcon src={logo} alt="Logo do WhatsApp" />
                 <LayerButtons>
+                <Link to ='/register'>
                   <Button primary>Whatsapp Web</Button>
+                  </Link>
                   <Button>Privacidade</Button>
                   <Button>Recursos</Button>
                   <Button>Central de ajuda</Button>
@@ -74,7 +77,9 @@ import {
               <Text>
               <Title>Envie mensagens com privacidade</Title>
               <Subtitle>Mensagens e chamadas privadas simples, seguras e gratuitas*, disponíveis em todo o mundo.</Subtitle>
+              <Link to ='/register'>
               <Button primary>Whatsapp Web</Button>
+              </Link>
               </Text>
               <ContentMessages>
               <ContentMessageLayer1 src={emoji} alt="emoji" />

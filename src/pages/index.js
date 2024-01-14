@@ -5,3 +5,5 @@
 export * from './NotFound'
 export * from './Home'
 export * from './Initial'
+export * from './Register'
+export * from './Login'

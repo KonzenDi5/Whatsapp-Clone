@@ -136,7 +136,7 @@ padding: 20px;
 `
 export const TitleL2 = styled.h2`
 width: 60%;
-color: black;
+color: ${Themes.lightgreen};
 padding: 30px;
 `
 
