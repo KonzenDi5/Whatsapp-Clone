@@ -15,7 +15,8 @@ import {
     Subtitle,
     ContentMessages,
     Text,
-    TitleL2
+    TitleL2,
+    VideoMessage
   } from "./styles";
   import { useMediaQuery } from "react-responsive";
   import { useState } from "react";
@@ -25,6 +26,7 @@ import {
   import message2 from "../../assets/message2.png";
   import emoji from "../../assets/emojicoffre.png"
   import messageL2 from "../../assets/messageslayer2.png"
+  import message4 from "../../assets/message4.png"
   import { Fade } from "react-reveal";
   
   export const Initial = () => {
@@ -84,13 +86,13 @@ import {
               </ContentMessages>
               </Fade>
             </Layer1>
+            <Fade>
               <Layer2>
-              <Fade>
                 <MessageLayer2 src={messageL2} alt="Messages" />
                 <TitleL2>Com mensagens e chamadas privadas, você pode ser quem realmente é, conversar com liberdade e se aproximar das pessoas mais importantes da sua vida, não importa onde estejam.</TitleL2>
-              </Fade>
+                <VideoMessage src={message4} alt="VideoMessage" />
               </Layer2>
-    
+              </Fade>
           </Content>
         </Container>
       </>

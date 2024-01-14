@@ -45,12 +45,13 @@ export const Container = styled.div`
 `;
 
 export const Header = styled.div`
-  height: 7%;
+  height: 10%;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 10px;
 `;
 
 export const WhatsIcon = styled.img`
@@ -82,11 +83,11 @@ export const Layer1 = styled.div`
   display: flex;
   flex-direction: row;
   color: white;
-  width: 100%;
   height: 100vh;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  margin: 30px;
+  border-radius: 50px;
 `
 
 export const ContentMessageLayer1 = styled.img`
@@ -105,6 +106,7 @@ width: 500px;
 `
 
 export const Layer2 = styled.div`
+width: 100%;
 background-color: ${Themes.clearmode};
 display: flex;
 flex-direction: column;
@@ -113,7 +115,7 @@ justify-content: center;
 padding: 30px;
 `
 export const MessageLayer2 = styled.img`
-width: 1000px;
+width: 900px;
 `
 
 export const Text = styled.div`
@@ -135,4 +137,8 @@ export const TitleL2 = styled.h2`
 width: 60%;
 color: black;
 padding: 30px;
+`
+
+export const VideoMessage = styled.img`
+width: 200px;
 `
