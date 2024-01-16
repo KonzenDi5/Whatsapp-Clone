@@ -100,7 +100,7 @@ export const Initial = () => {
                 <Title>Envie mensagens com privacidade</Title>
                 <Subtitle>Mensagens e chamadas privadas simples, seguras e gratuitas*, disponíveis em todo o mundo.</Subtitle>
     
-                  <Button primary onClick={handleWhatsappWebClick}>
+                  <Button primary onClick={handleWhatsappWebClick}>Whatsapp Web </Button>
               </Text>
               <ContentMessages>
                 <ContentMessageLayer1 src={emoji} alt="emoji" />
