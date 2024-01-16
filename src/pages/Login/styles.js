@@ -62,7 +62,10 @@ width: 400px;
 background-color: ${Themes.darkmode};
 color: ${Themes.clearmode};
 padding: 10px;
-border: none;
+border: 1px solid ${Themes.greeMasc};
+@media (max-width: 768px) {
+    width: 200px;
+  }
 `
 
 export const Title = styled.h1`

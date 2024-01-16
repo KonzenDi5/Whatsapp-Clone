@@ -12,38 +12,51 @@ import message2 from "../../assets/message2.png";
 import emoji from "../../assets/emojicoffre.png"
 import messageL2 from "../../assets/messageslayer2.png"
 import message4 from "../../assets/message4.png"
-
 export const Initial = () => {
+  // Verificando se o dispositivo é móvel usando useMediaQuery
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  // Estado para controlar se o menu está aberto ou fechado
   const [menuOpen, setMenuOpen] = useState(false);
+  // Estado para verificar se o usuário está autenticado
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  // Hook de navegação
   const navigate = useNavigate();
 
+  // Efeito colateral que é executado após a renderização inicial
   useEffect(() => {
+    // Adiciona um listener para verificar mudanças no estado de autenticação
     const unsubscribe = auth.onAuthStateChanged((user) => {
       if (user) {
+        // Se houver um usuário autenticado, atualiza o estado
         setIsAuthenticated(true);
       } else {
+        // Se não houver usuário autenticado, atualiza o estado
         setIsAuthenticated(false);
       }
     });
 
+    // Retorna uma função de limpeza para remover o listener quando o componente é desmontado
     return () => {
       unsubscribe();
     };
   }, []);
 
+  // Função para lidar com o clique no botão de menu
   const handleMenuClick = () => {
+    // Inverte o estado de menuOpen
     setMenuOpen(!menuOpen);
   };
 
+  // Função para lidar com o clique no botão do WhatsApp Web
   const handleWhatsappWebClick = () => {
+    // Redireciona para a página de registro se não estiver autenticado, caso contrário, redireciona para a página inicial
     if (isAuthenticated) {
       navigate("/home");
     } else {
       navigate("/register");
     }
   };
+
 
   return (
     <>
