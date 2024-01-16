@@ -2,12 +2,14 @@
 
 export const Themes = {
     green: '##35BD01',
-    lightgreen: '##29EF58',
+    greeMasc: '##20E74E',
     gray: '##8C8C8C',
     lightgray: '##B0B0B0',
     white: '##FFFFFF',
-    darkmode: '#02343B',
-    colorChat: '#060C20',
+    colorChat: '#022024',
+    darkmode: '#031616',
+    backgroundChat: '#20252C',
+    notification: '#3E8671',
     clearmode: '#FDF5E7',
   }
   

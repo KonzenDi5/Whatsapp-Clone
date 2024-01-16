@@ -12,7 +12,7 @@ export const WRapper = styled.div`
 export const Container = styled.div`
 width: 30vw;
 height: 30vw;
-background-color: ${Themes.clearmode};
+background-color: ${Themes.colorChat};
 box-shadow: 13px 13px 80px -16px rgba(0,0,0,0.75);
 display: flex;
 flex-direction: column;
@@ -54,25 +54,23 @@ export const Button = styled.button`
     width: ${props => props.primary ? "0" : "100%"};
   }
 `;
-
-export const FormStyles = styled.form`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
-`
-
 export const Input = styled.input`
 border-radius: 50px;
 margin: 30px;
 height: 35px;
 width: 400px;
+background-color: ${Themes.darkmode};
+color: ${Themes.clearmode};
+padding: 10px;
+border: none;
 `
+
 export const Title = styled.h1`
 padding: 20px;
 font-size: 20px;
+color: #21C465;
 `
+
 
 export const Subtitle = styled.h3`
 padding: 20px;

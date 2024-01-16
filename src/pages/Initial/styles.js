@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Themes } from "../../styles/themes";
-import family from '../../assets/family.png'
+import family from '../../assets/family.png';
 
 export const Button = styled.button`
   background-color: ${props => props.primary ? "#29EF58" : "transparent"};
@@ -12,6 +12,7 @@ export const Button = styled.button`
   position: relative;
   overflow: hidden;
   z-index: 1;
+  margin: 20px;
 
   &::after {
     content: "";
@@ -30,12 +31,12 @@ export const Button = styled.button`
 `;
 
 export const LayerButtons = styled.div`
-width: 100%;
-display: flex;
-flex-direction: row;
-align-items: center;    
-justify-content: center;
-`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
 
 export const Container = styled.div`
   width: 100%;
@@ -60,8 +61,8 @@ export const WhatsIcon = styled.img`
 `;
 
 export const Content = styled.div`
-width: 100%;
-`
+  width: 100%;
+`;
 
 export const Menu = styled.div`
   position: absolute;
@@ -78,8 +79,7 @@ export const Menu = styled.div`
 `;
 
 export const Layer1 = styled.div`
-  background-image: url(${family});
-  background-repeat: no-repeat;
+  background:url(${family});  
   background-size: cover;
   display: flex;
   flex-direction: row;
@@ -89,57 +89,106 @@ export const Layer1 = styled.div`
   justify-content: center;
   margin: 30px;
   border-radius: 50px;
-`
+
+  @media (max-width: 768px) {
+    margin: 0;
+    border-radius: 20px;
+    background-position:center;
+    background-size: cover;
+  }
+`;
 
 export const ContentMessageLayer1 = styled.img`
-display: flex;
-flex-direction: column;
-padding: 50px;
-`
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+
+  @media (max-width: 768px) {
+    display: none;
+
+  }
+`;
 
 export const ContentMessages = styled.div`
-display: flex;
-flex-direction: column;
-`
+  display: flex;
+  flex-direction: column;
+`;
 
 export const Layer1ImageMessage = styled.img`
-width: 500px;
-`
+  width: 500px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
 
 export const Layer2 = styled.div`
-width: 100%;
-background-color: ${Themes.clearmode};
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 30px;
-`
+  width: 100%;
+  background-color: ${Themes.clearmode};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+
+  @media (max-width: 768px) {
+    background-color: ${Themes.clearmode};
+  }
+`;
+
 export const MessageLayer2 = styled.img`
-width: 900px;
-`
+  width: 900px;
+
+  @media (max-width: 768px) {
+    width: 600px;
+  }
+`;
 
 export const Text = styled.div`
-display: flex;
-flex-direction: column;
-width: 15%;
-font-size:  20px;
-height: 80%;
-margin-right: 100px;
-`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 20px;
+  height: 80%;
+  margin-left: 0;
+
+  @media (min-width: 768px) {
+    width: 30%;
+    margin-left: 200px;
+  }
+`;
+
 export const Title = styled.h1`
-padding: 20px;
-`
+  padding: 20px;
+  font-size: 70px;
+  @media (max-width: 768px) {
+    font-size: 40px;
+    width: 30%;
+  }
+`;
 
 export const Subtitle = styled.h3`
-padding: 20px;
-`
+  padding: 20px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+`;
+
 export const TitleL2 = styled.h2`
-width: 60%;
-color: ${Themes.lightgreen};
-padding: 30px;
-`
+  width: 60%;
+  color: ${Themes.lightgreen};
+  padding: 30px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+    width: 80%;
+  }
+`;
 
 export const VideoMessage = styled.img`
-width: 200px;
-`
+  width: 200px;
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+

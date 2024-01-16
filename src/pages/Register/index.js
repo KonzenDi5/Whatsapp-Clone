@@ -5,6 +5,7 @@ import firebase from 'firebase/compat/app';
 import { auth, db } from '../../server/firebaseConfig';
 import { WRapper, Container, Logo, Button, FormStyles, Input, Title } from './styles';
 import logo from "../../assets/whatlogo.png";
+import { Link } from 'react-router-dom';
 
 
 export const Register = () => {
@@ -30,9 +31,13 @@ export const Register = () => {
         auth.signInWithPopup(provider)
             .then((result) => {
                 db.collection('usuarios').doc(result.user.uid).set({
+                    id: result.user.uid,
                     email: result.user.email,
+                    name: result.user.displayName, 
+                    photoURL: result.user.photoURL, 
+                    contatos: ""
                 });
-                console.log('User registra no firebase pelo google com sucesso rapaiz')
+                console.log('User registrado no firebase pelo google com sucesso rapaiz')
                 navigate('/home');
             })
             .catch((error) => alert(error.message));
@@ -41,7 +46,9 @@ export const Register = () => {
     return (
         <WRapper>
             <Container>
+                <Link to='/'>
                 <Logo src={logo} alt='logo' />
+                </Link>
                 <Title>REGISTRO</Title>
                 <FormStyles onSubmit={register}>
                     <Input type="text" placeholder="Nome" required />

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { AuthProvider } from './routes/authContext';
 
-ReactDOM.render(
+ReactDOM.render( //usei o ReactDOM do react 17, me sinto mais confortavel
   <React.StrictMode>
     <AuthProvider>
       <App />

@@ -3,6 +3,7 @@ import logo from "../../assets/whatlogo.png";
 import { useNavigate } from "react-router-dom";
 import firebase from 'firebase/compat/app';
 import { auth, db } from '../../server/firebaseConfig';
+import { Link } from "react-router-dom";
 
 
 
@@ -30,7 +31,9 @@ export const Login = () =>{
     return(<>
     <WRapper>
         <Container>
+        <Link to='/'>
         <Logo src={logo} alt='logo' />
+        </Link>
         <Title>LOGIN</Title>
         <Input type="email" placeholder="Email"  />
         <Input type="password" placeholder="Senha"  />

@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 
-import { NotFound, Home } from '../pages'
+import { NotFound, Home, Initial } from '../pages'
 
 export const AppRoutes = () => {
   return (
@@ -8,6 +8,7 @@ export const AppRoutes = () => {
 
       <Routes>
         <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<Initial />} />
         <Route path="/Home" element={<Home />} />
       </Routes>
     </>
