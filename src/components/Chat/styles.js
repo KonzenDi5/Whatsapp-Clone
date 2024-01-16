@@ -49,6 +49,8 @@ export const ChatMessage = styled.div`
     display: flex;
     justify-content: ${props => props.direction === 'left' ? 'flex-start' : 'flex-end'};
     margin: 10px;
+    height: 100%;
+    overflow-y: auto;
     .message {
         background: ${props => props.direction === 'left' ? '#F0F0F0' : '#143C31'};
         color: ${props => props.direction === 'left' ? '#1C1C1C' : '#F2F2F2'};
