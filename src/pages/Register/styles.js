@@ -43,6 +43,10 @@ export const Button = styled.button`
   overflow: hidden;
   margin-top: 20px;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
   @media (max-width: 768px) {
     font-size: 20px;
   }
