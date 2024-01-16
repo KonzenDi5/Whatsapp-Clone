@@ -17,6 +17,7 @@ import {
   LayersMenu,
   LayersMenuOptions,
   KonzenSigned,
+  Scrollmessages,
 } from "./styles";  // Importa componentes e estilos necessários
 import CheckIcon from "@material-ui/icons/Check";  // Importa o ícone de marcação de check
 import IconButton from "@material-ui/core/IconButton";  // Importa o botão do Material-UI
@@ -161,6 +162,7 @@ export function Chat() {
       </SideMenu>
 
       {/* Área de mensagens */}
+      <Srcrollmessages>
       <Messages>
         {/* Mapeia as mensagens da conversa atual e exibe os balões de chat */}
         {conversation.messages && conversation.messages.map((message, index) => (
@@ -176,6 +178,7 @@ export function Chat() {
           </ChatMessage>
         ))}
       </Messages>
+      </Scrollmessages>
     </Container>
   </>
 );
