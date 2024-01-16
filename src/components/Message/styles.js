@@ -8,7 +8,7 @@ export const SendMessageStyles = styled.div`
     align-items:center;
     justify-content: center;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 `
 
 export const Input = styled.input`
