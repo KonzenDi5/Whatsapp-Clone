@@ -4,7 +4,7 @@ import background from "../../assets/wallpaper.png"
 
 export const Container = styled.div`
 height: 100%;
-width: 100%;
+width: 93%;
 background-image: url(${background});
   background-repeat: repeat;
   background-size: contain;
