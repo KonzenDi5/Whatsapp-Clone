@@ -9,6 +9,7 @@ export const SendMessageStyles = styled.div`
     justify-content: center;
     position: relative;
     z-index: 0;
+    background-color: ${Themes.backgroundChat} ;
 `
 
 export const Input = styled.input`
