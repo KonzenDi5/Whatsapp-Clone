@@ -89,8 +89,8 @@ export const SideMenu = styled.div`
 `;
 
 export const ProfilePhotoMenu = styled.img`
-width: 250px;
-height: 250px;
+width: 300px;
+height: 300px;
 border-radius: 50%;
 padding: 90px;
 `
@@ -100,12 +100,12 @@ display: flex;
 justify-content: center;
 flex-direction: row;
 border-top: solid 1px #1F2E38;
-padding: 20px;
+padding: 10px;
 `
 
 export const MediaContent = styled.img`
-padding: 10px;
-width: 100px;
+padding: 5px;
+width: 70px;
 border: solid 1px #28362C;
 margin: 2px;
 `
