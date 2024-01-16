@@ -19,6 +19,10 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 border-radius: 50px;
+@media (max-width: 768px) {
+    width: 95%;
+    height: 80%;
+  }
 `
 
 
@@ -64,6 +68,7 @@ color: ${Themes.clearmode};
 padding: 10px;
 border: 1px solid ${Themes.greeMasc};
 @media (max-width: 768px) {
+  border: 1px solid #29EF58;
     width: 200px;
   }
 `

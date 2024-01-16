@@ -21,7 +21,7 @@ export const Register = () => {
                     email: email,
                 });
                 console.log('User registra no firebase pelo email/password com sucesso')
-                navigate('/login');
+                navigate('/home');
             })
             .catch((error) => alert(error.message));
     };
@@ -55,7 +55,7 @@ export const Register = () => {
                     <Input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} required />
                     <Input type="password" placeholder="Senha" onChange={(e) => setPassword(e.target.value)} required />
                 </FormStyles>
-                <Button primary type="submit">REGISTRE-SE</Button>
+                <Button primary type="submit" onClick={register}>REGISTRE-SE</Button>
                 <Button primary onClick={googleLogin}>ENTRE COM O GOOGLE</Button>
             </Container>
         </WRapper>
