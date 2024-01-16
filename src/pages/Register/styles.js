@@ -46,7 +46,7 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 13px;
   @media (max-width: 768px) {
     font-size: 20px;
   }

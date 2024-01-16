@@ -115,7 +115,7 @@ export const ContentMessages = styled.div`
 `;
 
 export const Layer1ImageMessage = styled.img`
-  width: 500px;
+  width: 400px;
 
   @media (max-width: 768px) {
     display: none;
