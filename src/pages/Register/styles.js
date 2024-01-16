@@ -10,8 +10,8 @@ export const WRapper = styled.div`
  justify-content: center;
 `
 export const Container = styled.div`
-width: 30vw;
-height: 30vw;
+width: 50vw;
+height: 40vw;
 background-color: ${Themes.colorChat};
 box-shadow: 13px 13px 80px -16px rgba(0,0,0,0.75);
 display: flex;
@@ -79,7 +79,7 @@ export const Input = styled.input`
 border-radius: 50px;
 margin: 30px;
 height: 35px;
-width: 400px;
+width: 250px;
 background-color: ${Themes.darkmode};
 color: ${Themes.clearmode};
 padding: 10px;
