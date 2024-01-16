@@ -9,9 +9,6 @@ background-image: url(${background});
   background-repeat: repeat;
   background-size: contain;
 `
-export const Chatmessage = styled.div`
-
-`
 
 export const ProfilePhoto = styled.img`
 width: 40px;
@@ -44,7 +41,10 @@ export const Messages = styled.div`
 height: 100%;
 overflow-y: auto;
 `
-
+export const Scrollmessages=styled.div`
+height: 100%;
+overflow:auto;
+`
 export const ChatMessage = styled.div`
     display: flex;
     justify-content: ${props => props.direction === 'left' ? 'flex-start' : 'flex-end'};
