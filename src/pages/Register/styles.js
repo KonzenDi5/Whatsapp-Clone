@@ -41,7 +41,7 @@ export const Button = styled.button`
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 5px;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -77,7 +77,7 @@ align-items: center;
 
 export const Input = styled.input`
 border-radius: 50px;
-margin: 30px;
+margin: 15px;
 height: 35px;
 width: 250px;
 background-color: ${Themes.darkmode};
