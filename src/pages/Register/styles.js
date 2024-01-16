@@ -29,7 +29,7 @@ border-radius: 50px;
 
 
 export const Logo = styled.img`
-width: 250px;
+width: 150px;
 `
 
 export const Button = styled.button`
