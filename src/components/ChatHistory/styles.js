@@ -20,10 +20,12 @@ margin-right: 50px;
 
 export const ChatName = styled.span`
   font-weight: bold;
+  font-size: 15px;
 `;
 
 export const ChatMessage = styled.span`
   color: #666;
+  font-size: 10px;
 `;
 
 export const ChatTime = styled.span`
