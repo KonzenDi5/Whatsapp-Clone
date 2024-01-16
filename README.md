@@ -16,7 +16,7 @@ O site possui uma integração com o **Firebase** para autenticação de usuári
 Não tive tempo de aplicar a lógica do envio da mensagem, mas seria usaria o mesmo contexto de apresentação para controlar o estado do array.
 
 Não apliquei funcionalidade nos icones do header da sidebar, achei trabalhoso.
-
+=> Faltaram algumas media queryes para telas 1280px, mas fiz o que eu pude no tempo que tenho atualmente p/ conciliar com a rotina da iPlace
 Portanto, o chat foi implementado com um contexto dentro do aplicativo, que manipula e atualiza os estados dos chats para visualização.
 
 ## Scripts Disponíveis
