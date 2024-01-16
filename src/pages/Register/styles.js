@@ -10,8 +10,8 @@ export const WRapper = styled.div`
  justify-content: center;
 `
 export const Container = styled.div`
-width: 50vw;
-height: 40vw;
+width: 40vw;
+height: 40vh;
 background-color: ${Themes.colorChat};
 box-shadow: 13px 13px 80px -16px rgba(0,0,0,0.75);
 display: flex;
