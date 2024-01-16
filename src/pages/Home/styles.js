@@ -13,7 +13,7 @@ export const WRapper = styled.div`
 `
 export const Container = styled.div`
 width: 80vw;
-height: 80%;
+height: 90%;
 background-color: ${Themes.darkmode};
 display: flex;
 flex-direction: row;
