@@ -3,7 +3,7 @@ import {Themes} from "../../styles/themes"
 import background from "../../assets/wallpaper.png"
 
 export const Container = styled.div`
-height: 80%;
+height: 100%;
 width: 100%;
 background-image: url(${background});
   background-repeat: repeat;
@@ -81,15 +81,15 @@ export const SideMenu = styled.div`
   top: 0;
   right: ${props => props.isOpen ? '0' : '-35%'};
   width: 25%;
-  height: 100%;
+  height: 80%;
   background-color: ${Themes.darkmode};
   transition: right 0.3s ease;
   z-index: 1;
 `;
 
 export const ProfilePhotoMenu = styled.img`
-width: 400px;
-height: 400px;
+width: 250px;
+height: 250px;
 border-radius: 50%;
 padding: 90px;
 `
@@ -128,5 +128,6 @@ width: 200px;
 margin-left: 30%;
 `
 export const Message=styled.div``
+
 
 
