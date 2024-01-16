@@ -18,10 +18,12 @@ padding: 10px;
 flex-direction: row;
 `
 export const ProfilePhoto = styled.img`
-width: 50px;
+width: 40px;
+height: 40px;
 border-radius: 50%;
 `
 export const ChatHistory = styled.div`
+font-size: 12px;
   background-color: ${props => props.isActive ? '#3E8671' : 'transparent'};
 `
 
