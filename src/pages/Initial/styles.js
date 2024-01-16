@@ -160,7 +160,8 @@ export const Text = styled.div`
 
 export const Title = styled.h1`
   padding: 20px;
-  font-size: 5cap;
+  font-size: 30px;
+  width: 50%;
   @media (max-width: 768px) {
     font-size: 40px;
     width: 30%;
@@ -173,7 +174,7 @@ export const Title = styled.h1`
 
 export const Subtitle = styled.h3`
   padding: 20px;
-  font-size: 25px;
+  font-size: 15px;
   @media (max-width: 768px) {
     font-size: 20px;
   }
