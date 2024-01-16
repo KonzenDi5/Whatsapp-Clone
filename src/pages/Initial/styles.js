@@ -165,6 +165,10 @@ export const Title = styled.h1`
     font-size: 40px;
     width: 30%;
   }
+  @media (max-width: 1000px) {
+    font-size: 30px;
+    width: 35%;
+  }
 `;
 
 export const Subtitle = styled.h3`
