@@ -14,8 +14,8 @@ export const Chatmessage = styled.div`
 `
 
 export const ProfilePhoto = styled.img`
-width: 50px;
-height: 50px;
+width: 40px;
+height: 40px;
 border-radius: 50%;
 `
 export const HeaderChat = styled.div`
@@ -31,10 +31,10 @@ background-color: ${Themes.backgroundChat};
 
 export const Name = styled.h3`
 
-font-size: 15px;
+font-size: 12px;
 `
 export const Status = styled.p`
-font-size: 10px;
+font-size: 9px;
 `
 export const NameStatus = styled.div`
 margin-left: 20px;
@@ -57,6 +57,7 @@ export const ChatMessage = styled.div`
         display: inline-block;
         text-align: left;
         position: relative;
+        font-size: 12px;
         .timeAndIcon {
             display: flex;
             justify-content: ${props => props.direction === 'left' ? 'flex-start' : 'flex-end'};
@@ -66,7 +67,7 @@ export const ChatMessage = styled.div`
                 margin-right: 5px;
             }
             .time {
-                font-size: 12px;
+                font-size: 8px;
             }
         }
     }
