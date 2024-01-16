@@ -40,6 +40,7 @@ margin-left: 20px;
 export const Messages = styled.div`
 height: 100%;
 overflow-y: auto;
+z-index: 5;
 `
 
 export const ChatMessage = styled.div`
