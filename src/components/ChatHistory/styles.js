@@ -35,8 +35,8 @@ export const ChatTime = styled.span`
 `;
 
 export const ProfileImage = styled.img`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   margin-right: 10px;
 `;
