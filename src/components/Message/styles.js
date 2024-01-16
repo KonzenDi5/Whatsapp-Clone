@@ -3,7 +3,7 @@ import { Themes } from "../../styles/themes";
 
 export const SendMessageStyles = styled.div`
     width: 100%;
-    height: 5%;
+    height: 7%;
     display: flex;
     align-items:center;
     justify-content: center;
@@ -14,6 +14,7 @@ export const Input = styled.input`
     width: 90%;
     border-radius: 40px;
     border: none;
+    font-size: 12px;
     padding: 5px;
     background-color: #2F525255;
     color: white;
