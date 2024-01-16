@@ -44,7 +44,7 @@ export function Sidebar() {
           <FilterList style={{ color: '#3E8671', cursor: "pointer" }} />
         </SearchInput>
         <ConversasArquivadas>
-          <ArquiveStyles onClick={handleArchiveClick}><Archive />Arquivadas<p>11</p></ArquiveStyles>
+          <ArquiveStyles onClick={handleArchiveClick}><Archive />Arquivadas<p>0</p></ArquiveStyles>
         </ConversasArquivadas>
         {isMenuOpen && (
           <MenuLateral>
